@@ -24,3 +24,16 @@ document.querySelectorAll('.card, .menu-category').forEach(el => {
     el.style.transition = "all 0.6s ease-out";
     observer.observe(el);
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            // Adding a small delay based on index for the staggered effect
+            setTimeout(() => {
+                entry.target.classList.add('active');
+            }, index * 150); 
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
