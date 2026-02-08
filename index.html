@@ -5,133 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poha on Wheels | Menu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="hero">
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <img src="https://via.placeholder.com/60" alt="Logo" class="logo">
-                <h1>Poha on <br><span>wheels</span></h1>
-                <p class="subtitle">Delicious Poha to lift your mood in morning</p>
-                <div class="info-row">
-                    <span>⏰ 9:00 AM - 6:00 PM On all days</span><br>
-                    <span>📍 6th Block Koramangala</span>
-                </div>
-                <a href="#full-menu" class="btn-primary">CHECK MENU ↓</a>
+            <img src="logo.png" alt="Logo" class="logo reveal">
+            <h1 class="reveal">Poha on <br>wheels</h1>
+            <p class="subtitle reveal">Delicious Poha to lift your mood in morning</p>
+            <div class="info reveal">
+                <p>⏰ 9:00 AM - 6:00 PM On all days</p>
+                <p>📍 6th Block Koramangala</p>
             </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1610101561174-325997235a96?auto=format&fit=crop&q=80&w=600" alt="Indori Poha">
-            </div>
-        </div>
-    </header>
-
-    <section class="featured">
-        <div class="container">
-            <h2>Our Must Try Items</h2>
-            <p>Curious? Here are our most popular menu items.</p>
-            <div class="featured-grid">
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Indori Poha">
-                    <h3>INDORI POHA</h3>
-                    <p class="price">₹40</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Khaman Dhokla">
-                    <h3>KHAMAN DHOKLA</h3>
-                    <p class="price">₹40</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Sev Puri">
-                    <h3>SEV PURI</h3>
-                    <p class="price">₹40</p>
-                </div>
+            <a href="#menu" class="btn-check reveal">CHECK MENU ↓</a>
+            <div class="hero-img-container reveal">
+                <img src="poha-main.png" alt="Poha Plate" class="main-poha">
             </div>
         </div>
     </section>
 
-    <section id="full-menu" class="menu-section">
+    <section id="menu" class="full-menu">
         <div class="container">
-            <div class="section-title">
-                <h2>Full Menu</h2>
-                <p>Curious? Here are our most popular menu items.</p>
+            <h2 class="reveal">Full Menu</h2>
+            <p class="reveal">Curious? Here are our most popular menu items.</p>
+
+            <div class="menu-card reveal">
+                <h3>Poha</h3>
+                <div class="item"><span>Indori Poha</span> <span>₹40</span></div>
+                <div class="item"><span>Masala Poha</span> <span>₹40</span></div>
+                <div class="item"><span>Jain Poha</span> <span>₹40</span></div>
+                <div class="item"><span>Khata Meetha Poha</span> <span>₹50</span></div>
+                <div class="item"><span>Tomato Poha</span> <span>₹50</span></div>
+                <div class="item"><span>Cheese Poha</span> <span>₹60</span></div>
+                <div class="item"><span>Kids Special Poha</span> <span>₹50</span></div>
             </div>
 
-            <div class="menu-grid">
-                <div class="menu-category">
-                    <h3>Poha</h3>
-                    <ul>
-                        <li><span>Indori Poha</span> <span>₹40</span></li>
-                        <li><span>Masala Poha</span> <span>₹40</span></li>
-                        <li><span>Jain Poha</span> <span>₹40</span></li>
-                        <li><span>Khata Meetha Poha</span> <span>₹50</span></li>
-                        <li><span>Tomato Poha</span> <span>₹50</span></li>
-                        <li><span>Cheese Poha</span> <span>₹60</span></li>
-                        <li><span>Kids Special Poha</span> <span>₹50</span></li>
-                    </ul>
-                </div>
-
-                <div class="menu-category">
-                    <h3>Snacks / Fast Food</h3>
-                    <ul>
-                        <li><span>Khaman Dhokla</span> <span>₹40</span></li>
-                        <li><span>Ghee Jalebi (2 pcs)</span> <span>₹20</span></li>
-                        <li><span>Ghee Jalebi (100 gm)</span> <span>₹50</span></li>
-                        <li><span>Rajasthani Samosa</span> <span>₹20</span></li>
-                        <li><span>Pyaz Kachori</span> <span>₹25</span></li>
-                        <li><span>Bombay Vada Pav</span> <span>₹30</span></li>
-                        <li><span>Cheese Vada Pav</span> <span>₹50</span></li>
-                    </ul>
-                </div>
-
-                <div class="menu-category">
-                    <h3>Chaats</h3>
-                    <ul>
-                        <li><span>Sev Puri</span> <span>₹40</span></li>
-                        <li><span>Chola Papdi Chaat</span> <span>₹40</span></li>
-                        <li><span>Chola Samosa</span> <span>₹50</span></li>
-                        <li><span>Chola Kachori</span> <span>₹50</span></li>
-                        <li><span>Dahi Puri / Papdi</span> <span>₹50</span></li>
-                        <li><span>Dahi Samosa</span> <span>₹50</span></li>
-                    </ul>
-                </div>
-
-                <div class="menu-category add-ons">
-                    <h3>Extra Add-Ons</h3>
-                    <ul>
-                        <li><span>Tomato</span> <span>₹10</span></li>
-                        <li><span>Extra Pouch Sev</span> <span>₹10</span></li>
-                        <li><span>Extra Cheese</span> <span>₹20</span></li>
-                    </ul>
-                </div>
+            <div class="menu-card reveal">
+                <h3>Snacks / Fast Food</h3>
+                <div class="item"><span>Khaman Dhokla</span> <span>₹40</span></div>
+                <div class="item"><span>Ghee Jalebi (2 pcs)</span> <span>₹20</span></div>
+                <div class="item"><span>Ghee Jalebi (100 gm)</span> <span>₹50</span></div>
+                <div class="item"><span>Rajasthani Samosa</span> <span>₹20</span></div>
+                <div class="item"><span>Pyaz Kachori</span> <span>₹25</span></div>
+                <div class="item"><span>Bombay Vada Pav</span> <span>₹30</span></div>
+                <div class="item"><span>Cheese Vada Pav</span> <span>₹50</span></div>
             </div>
-        </div>
-    </section>
-
-    <section class="promo-banner">
-        <div class="container">
-            <p>Work remotely for US companies</p>
-            <h2>Land a Remote Job & 3X Your Indian Salary for the same skill</h2>
-            <div class="promo-grid">
-                <div class="promo-card">
-                    <div class="icon">🌍</div>
-                    <h4>FULLY REMOTE</h4>
-                    <p>Work from anywhere. No Commute.</p>
-                </div>
-                <div class="promo-card">
-                    <div class="icon">🇺🇸</div>
-                    <h4>EXCLUSIVE USD JOBS</h4>
-                    <p>Get access to jobs that pay in USD.</p>
-                </div>
-                <div class="promo-card">
-                    <div class="icon">👨‍💻</div>
-                    <h4>ALL ROLES</h4>
-                    <p>Software, Marketing, Design, HR.</p>
-                </div>
-            </div>
-            <button class="btn-outline">EXPLORE JOBS</button>
         </div>
     </section>
 
